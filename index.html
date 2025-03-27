@@ -1,45 +1,123 @@
-<!Doctype html>
-<htmL>
+<!DOCTYPE html>
+<html>
 <head>
 <style>
+
   body {
     background-color:powderblue;
     font-family: Arial;
     color:black;
     text-align:center;
   }
-  header{
-        bckgound-colo:tomato;
-        colo:white;
-        text-alingn:center;
+  header {
+        background-color:tomato;
+        color:white;
+        text-align:center;
         padding:20px;
   }
+h1 {
+  color:navy;
+  font-size:36px; 
+}
+p { 
+	font-size:18px;
+}
+    img {
+	width:150px;
+	border-radius:50%;
+	height:200px;
+	border:3px solid green;
+	margin-top:10px;
+}
+        .table-style1 {
+            width: 80%;
+            margin: 20px auto;
+            border: 2px solid navy;
+        }
+
+        .table-style1 th, .table-style1 td {
+            border: 1px solid navy;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .table-style1 th {
+            background-color: lightgreen;
+        }
+
+        .table-style2 {
+            width: 60%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            border: 2px solid darkgreen;
+        }
+
+        .table-style2 th, .table-style2 td {
+            border: 1px solid darkgreen;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .table-style2 th {
+            background-color: lightgreen;
+        }
+         .about		{
+    		width: 60%;
+    		margin: 20px auto;
+    		text-align: left;
+	}
+div.mycontainer {
+  		width:66%;
+  		overflow:auto;
+	}
+div.mycontainer div {
+  		width:50%;
+  		float:left;
+	}
+.video		{
+		width: 35%;
+    		margin: 10px auto;
+    		text-align: center;
+		border: 3px solid green;
+	}
+        .list-style1 {
+            list-style-type: square;
+            color: darkblue;
+            text-align: left;
+	    margin:20px;
+        }
+
+        .list-style2 {
+            list-style-type: circle;
+            color: darkgreen;
+            text-align: left;
+	    margin:20px;
+        }
   </style>
-  <title>christian webpage</title
+ <title>christian webpage</title> 
 </head>
 <body>
 <header>
-  <h1>welocone to christian webpage</h1>
+  <h1>Welcome to Christian's webpage</h1>
 <p>this is a simple exmple of am HTML and CSS christian webpage.</p>
 <pre>
 name:christian
 Age:24
-location:kansas city.Mo
+location:kansas city, MO
 </pre>
 </header>
+<section class="about">
     <p>check out my favoire website
-<a href="https://fox4kc.com/news/"target="_blank"</a>
+<a href="https://fox4kc.com/news/"target="_blank">Fox4KC</a>
   </p>
 <a href="Christian@gmail.com target="_blank">christianmwenge@gmail.com</a>
-<a href="https://www.facebook.com/profile.php?id=100012785832877&mibextid=wwXIfr&mibextid=wwXIfr"target="_blank">
-<a href=https://www.tiktok.com/@christianmuya?_t=ZT-8uytMcKWQ18&_r=1"target="_blank">
-<a herf=https://www.instagram.com/christian_muya_01?igsh=ZTEyamx1dDk0aHc5&utm_source=q"target="_blank">
-<img src="https://github.com/Christianmuya/christianmuya/blob/main/IMG_3939.jpeg?raw=true"alt="sample image" width = "300" height = "400"></a>
-</secton>
+<a href="https://www.instagram.com/christian_muya_01?igsh=ZTEyamx1dDk0aHc5&utm_source=q" target="_blank">
+<img src="https://github.com/Christianmuya/christianmuya/blob/main/IMG_3939.jpeg?raw=true" alt="sample image" title="me in suit" width = "300" height = "400"></a>
+</section>
   <br>
 <hr>
 <h2>My Hobbies</h2>
-<table>
+<table class="table-style1"> 
   <tr>
     <th>Hobby</th>
     <th>Hours</th>
@@ -54,35 +132,47 @@ location:kansas city.Mo
 </tr>
 </table>
   <h2>My favorite video games</h2>
-<table>
+<table class="table-style2">
   <tr>
     <th>Game</th>
     <th>Hours Played</th>
 <tr>
 <tr>
    <td>grand theft auto</td>
-  <td>four 2h</td>
+  <td>2 hours</td>
 </tr>
 <tr>
-  <td>plya </td>
-  <td>four 1h</td>
+  <td>play </td>
+  <td>1 hour</td>
 </tr>
 </table>
-<h2>myfavrite food</h2>
-<ul></ul>
-  <li>taco</li>
-<h2>my favorite drinks</h2>
-<ul>
-  <li>apple juice</li>
-</ul>
-<aection>
+<div class="mycontainer">
+	<div>
+		<h2>myfavrite food</h2>
+		<ul class="list-style1">
+  			<li>Taco</li>
+			<li>Liver-pudding</li>
+		</ul>
+	</div>
+	<div>
+		<h2>my favorite drinks</h2>
+		<ul class="list-style2">
+  			<li>apple juice</li>
+			<li>orange juice</li>
+		</ul> 
+	</div>
+	</div>
+<section class="video">
 <h2>my favorite video</h2>
-<video width="480" height="360" controls>
+<video width="432" height="324" controls>
 <source src="https://live.staticflickr.com/video/4714734632/75f5ce27ea/700.mp4?s=eyJpIjo0NzE0NzM0NjMyLCJlIjoxNzQyOTI0MDM1LCJzIjoiYmY3MWJlNjk5ZWJiZDFmYTQ1ODMwYWIwNjk3NDRiZTk2NmQ5YWQ2MiIsInYiOjF9">
 Your browser does not support the video tag.
 </video>
 </section>
+
 <h2>Embedded website</h2>
+
 <iframe width="677" height="381" src="https://www.youtube.com/embed/hhzrul_MU6c" title="King Kong | Climbing Up (and Falling from) the Empire State Building" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-  </boby>
+
+  </body>
 </html> 
